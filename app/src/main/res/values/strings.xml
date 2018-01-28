@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">HealthDaily</string>
+    <string name="intro_message">To get started we\'ll need you to answer a
+    few questions about yourself.</string>
+    <string-array name="questionsToggle">
+        <item>Do you feel blank?</item>
+        <item>Do you feel blankish?</item>
+        <item>Do you feel blank?</item>
+        <item>Do you feel blankish?</item>
+        <item>Do you feel blank?</item>
+        <item>Do you feel blankish?</item>
+        <item>Do you feel blank?</item>
+        <item>Do you feel blankish?</item>
+        <item>Do you feel blank?</item>
+        <item>Do you feel blankish?</item>
+    </string-array>
+    <string-array name="questionsUserInput">
+        <item>Do you feel blank?</item>
+        <item>Do you feel blankish?</item>
+        <item>Do you feel blank?</item>
+        <item>Do you feel blankish?</item>
+        <item>Do you feel blank?</item>
+        <item>Do you feel blankish?</item>
+        <item>Do you feel blank?</item>
+        <item>Do you feel blankish?</item>
+        <item>Do you feel blank?</item>
+        <item>Do you feel blankish?</item>
+    </string-array>
+</resources>
