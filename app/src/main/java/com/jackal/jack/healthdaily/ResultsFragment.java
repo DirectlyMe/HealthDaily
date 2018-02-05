@@ -22,8 +22,8 @@ public class ResultsFragment extends Fragment {
     private static final String ARG_ANSWERS = "user answers";
     private final String TEST_ANSWER_LOG = "Answers";
 
-    private ProgressBar mProgressBarVitD;
     private ProgressBar mProgressBarVitB;
+    private ProgressBar mProgressBarVitD;
     private ProgressBar mProgressBarOmega3;
 
     private List<Goal> userAnswers;

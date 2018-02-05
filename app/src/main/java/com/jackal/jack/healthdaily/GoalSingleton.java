@@ -17,7 +17,6 @@ public class GoalSingleton {
     private static GoalSingleton sGoalSingleton;
 
 
-
     public static GoalSingleton get(Context context) {
 
         if (sGoalSingleton == null) {
@@ -37,8 +36,9 @@ public class GoalSingleton {
 
         Resources res = mContext.getResources();
 
-        String[] questionsToggle = res.getStringArray(R.array.questionsToggle);
-        String[] questionsUserInput = res.getStringArray(R.array.questionsUserInput);
+        String[] questionsToggle = res.getStringArray(R.array.questions_toggle);
+        String[] questionsUserInput = res.getStringArray(R.array.questions_user_input);
+        String[] userInputHints = res.getStringArray(R.array.user_input_hints);
 
 
         for (int i = 0; i < questionsToggle.length; i++) {
@@ -52,8 +52,9 @@ public class GoalSingleton {
         for (int i = 0; i < questionsUserInput.length; i++) {
             GoalUserInputType goal = new GoalUserInputType();
             goal.setType("UserInput");
+            goal.setUserHint(userInputHints[i]);
             goal.setQuestion(questionsUserInput[i]);
-            goal.setQuestionNumber(i + 11);
+            goal.setQuestionNumber(i + 6);
             goals.add(goal);
         }
 

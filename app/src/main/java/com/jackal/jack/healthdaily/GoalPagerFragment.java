@@ -14,6 +14,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.TextView;
 
 import java.util.List;
@@ -85,28 +86,33 @@ public class GoalPagerFragment extends Fragment {
 
         View view;
 
-        //Check to know which goal type to display.
+        //Check goal type variable to know which goal type to display.
         if(mGoal.getType().equals("Toggle")) {
+
             view = inflater.inflate(R.layout.fragment_goals_toggle, container, false);
 
-            mRadioButtonTrue = (RadioButton) view.findViewById(R.id.radio_button_true);
-            mRadioButtonTrue.setOnClickListener(new View.OnClickListener() {
-                public void onClick(View v) {
-                    mGoalToggle.setUserAnswer(true);
+            RadioGroup radioGroup = (RadioGroup) view.findViewById(R.id.radio_group);
+            radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+                @Override
+                public void onCheckedChanged(RadioGroup radioGroup, int id) {
+                    if (id == R.id.radio_button_true) {
+                        mGoalToggle.setUserAnswer(true);
+                    }
+                    else {
+                        mGoalToggle.setUserAnswer(false);
+                    }
                 }
             });
-            mRadioButtonFalse = (RadioButton) view.findViewById(R.id.radio_button_false);
-            mRadioButtonFalse.setOnClickListener(new View.OnClickListener() {
-                public void onClick(View v) {
-                    mGoalToggle.setUserAnswer(false);
-                }
-            });
+
         }
+        //inflates and sets up a userinput goal type layout
         else {
+
             view = inflater.inflate(R.layout.fragment_goals_userinput, container, false);
 
             mUserInputEditText = (EditText) view.findViewById(R.id.editText);
 
+            mUserInputEditText.setHint(mGoalUserInput.getUserHint());
             mUserInputEditText.addTextChangedListener(new TextWatcher() {
                 @Override
                 public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
@@ -125,14 +131,14 @@ public class GoalPagerFragment extends Fragment {
         }
 
         mQuestionNumber = (TextView) view.findViewById(R.id.question_number_view);
-        mQuestionNumber.setText(mGoal.getQuestionNumber() + "/20");
+        mQuestionNumber.setText(mGoal.getQuestionNumber() + "/10");
 
         mQuestionView = (TextView) view.findViewById(R.id.question_text_view);
         mQuestionView.setText(mGoal.getQuestion());
 
 
         mSubmitButton = (Button) view.findViewById(R.id.submit_button);
-        if (mGoal.getQuestionNumber() != 20) {
+        if (mGoal.getQuestionNumber() != 10) {
             mSubmitButton.setVisibility(View.INVISIBLE);
         }
         mSubmitButton.setOnClickListener(new View.OnClickListener() {

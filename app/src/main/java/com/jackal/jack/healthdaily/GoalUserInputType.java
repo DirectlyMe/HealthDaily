@@ -9,6 +9,7 @@ public class GoalUserInputType extends Goal implements Serializable {
 
 
     private String mUserAnswer = "";
+    private String mUserHint;
 
     @Override
     public String getType() {
@@ -26,6 +27,15 @@ public class GoalUserInputType extends Goal implements Serializable {
 
     public void setUserAnswer(String userAnswer) {
         mUserAnswer = userAnswer;
+    }
+
+
+    public String getUserHint() {
+        return mUserHint;
+    }
+
+    public void setUserHint(String userHint) {
+        mUserHint = userHint;
     }
 
 }

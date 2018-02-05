@@ -2,28 +2,29 @@
     <string name="app_name">HealthDaily</string>
     <string name="intro_message">To get started we\'ll need you to answer a
     few questions about yourself.</string>
-    <string-array name="questionsToggle">
-        <item>Do you feel blank?</item>
-        <item>Do you feel blankish?</item>
-        <item>Do you feel blank?</item>
-        <item>Do you feel blankish?</item>
-        <item>Do you feel blank?</item>
-        <item>Do you feel blankish?</item>
-        <item>Do you feel blank?</item>
-        <item>Do you feel blankish?</item>
-        <item>Do you feel blank?</item>
-        <item>Do you feel blankish?</item>
+    <string name="toggle_true">True</string>
+    <string name="toggle_false">False</string>
+    <string name="button_submit">Submit</string>
+    <string name="input_answer">Type Answer: </string>
+    <string-array name="questions_toggle">
+        <item>Do you consume red meat?</item>
+        <item>Do you consume fish?</item>
+        <item>Is your lifestyle sedentary?</item>
+        <item>Do you feel drowsy and unable focus regularly?</item>
+        <item>Do you consume more than 50 grams of sugar a day?</item>
     </string-array>
-    <string-array name="questionsUserInput">
-        <item>Do you feel blank?</item>
-        <item>Do you feel blankish?</item>
-        <item>Do you feel blank?</item>
-        <item>Do you feel blankish?</item>
-        <item>Do you feel blank?</item>
-        <item>Do you feel blankish?</item>
-        <item>Do you feel blank?</item>
-        <item>Do you feel blankish?</item>
-        <item>Do you feel blank?</item>
-        <item>Do you feel blankish?</item>
+    <string-array name="questions_user_input">
+        <item>How many hours of daily sunlight do you get on average?</item>
+        <item>How many ounces of daily vegetables do you consume on average?</item>
+        <item>How many grams of protein do you consume on average in a day?</item>
+        <item>How tall are you?</item>
+        <item>How much do you weigh?</item>
+    </string-array>
+    <string-array name="user_input_hints">
+        <item>e.g. 5</item>
+        <item>e.g. 5</item>
+        <item>e.g. 5</item>
+        <item>e.g. 5\'10</item>
+        <item>e.g. 175</item>
     </string-array>
 </resources>
