@@ -14,17 +14,17 @@
         <item>Do you consume more than 50 grams of sugar a day?</item>
     </string-array>
     <string-array name="questions_user_input">
+        <item>How tall are you?</item>
+        <item>How much do you weigh?</item>
         <item>How many hours of daily sunlight do you get on average?</item>
         <item>How many ounces of daily vegetables do you consume on average?</item>
         <item>How many grams of protein do you consume on average in a day?</item>
-        <item>How tall are you?</item>
-        <item>How much do you weigh?</item>
     </string-array>
     <string-array name="user_input_hints">
-        <item>e.g. 5</item>
-        <item>e.g. 5</item>
-        <item>e.g. 5</item>
         <item>e.g. 5\'10</item>
         <item>e.g. 175</item>
+        <item>e.g. 5</item>
+        <item>e.g. 10</item>
+        <item>e.g. 30</item>
     </string-array>
 </resources>

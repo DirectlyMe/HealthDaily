@@ -26,6 +26,8 @@ public class ResultsFragment extends Fragment {
     private ProgressBar mProgressBarVitD;
     private ProgressBar mProgressBarOmega3;
 
+    private ProcessAnswers mProcessAnswers;
+
     private List<Goal> userAnswers;
     private List<GoalUserInputType> mUserTextAnswers;
     private List<GoalToggleType> mUserToggleAnswers;
@@ -65,6 +67,7 @@ public class ResultsFragment extends Fragment {
             Log.i(TEST_ANSWER_LOG, userInput.getUserAnswer());
         }
 
+        mProcessAnswers = new ProcessAnswers(mUserTextAnswers, mUserToggleAnswers);
     }
 
     @Nullable
